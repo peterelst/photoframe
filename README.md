@@ -1,11 +1,11 @@
 # Raspberry Pi / Inky wHAT digital photo frame
 
-This project is a simple digital photo frame using a Raspberry Pi and an Inky wHAT e-ink display. It loads random images from source.unsplash.com, dithers the image, shows it on the display and refreshes at an interval you define.
+This project is a simple digital photo frame using a Raspberry Pi and an Inky wHAT e-ink display. It loads a random image from [source.unsplash.com](https://source.unsplash.com/), dithers it and shows it on the display at an interval you define.
 
 ## Hardware requirements
 
-* Raspberry Pi Zero (or any Inky wHAT compatible model)
-* Inky wHAT e-ink display
+* [Raspberry Pi Zero](https://shop.pimoroni.com/products/raspberry-pi-zero) (or any Inky wHAT compatible model)
+* [Inky wHAT](https://shop.pimoroni.com/products/inky-what) e-ink display
 
 ## Raspberry Pi headless setup
 
@@ -40,7 +40,7 @@ git clone https://github.com/peterelst/photoframe.git
 
 ## Customize random image keyword
 
-The Python script uses source.unsplash.com for easily getting hold of random images by keyword, the default used is `'cat'` and you can change that in `photoframe.py` to whatever you like to see or leave it empty and get completely random images.
+The Python script uses [source.unsplash.com](https://source.unsplash.com/) for easily getting hold of random images by keyword, the default used is `'cat'` and you can obviously change that in `photoframe.py` to whatever you'd like to see or leave it empty and get completely random images showing up.
 ```
 keyword = '<your keyword>'
 ```
