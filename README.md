@@ -38,9 +38,9 @@ git clone https://github.com/peterelst/photoframe.git
 * You're now ready and can test if the setup is successful by running the following command and watching the display update: `python photoframe.py`
 
 
-## Customize random image keyword
+## Customize image keyword
 
-The Python script uses [source.unsplash.com](https://source.unsplash.com/) for easily getting hold of random images by keyword, the default used is `'cat'` and you can obviously change that in `photoframe.py` to whatever you'd like to see or leave it empty and get completely random images showing up.
+The Python script uses [source.unsplash.com](https://source.unsplash.com/) for easily getting hold of random images by keyword, the default used is `'cat'` and you can obviously change that in [`photoframe.py`](https://github.com/peterelst/photoframe/blob/master/photoframe.py#L9) to whatever you'd like to see or leave it empty and get completely random images showing up.
 ```
 keyword = '<your keyword>'
 ```
