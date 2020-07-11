@@ -14,7 +14,7 @@ img_file = 'photo.jpg'
 
 def main():
     # Initialize InkyWHAT display
-    inky_display = InkyWHAT('red')
+    inky_display = InkyWHAT('black')
 
     # Download image and save locally
     img_data = requests.get(image_url).content
