@@ -1,6 +1,6 @@
 # Raspberry Pi / Inky wHAT digital photo frame
 
-This project is a simple digital photo frame using a Raspberry Pi and an Inky wHAT e-ink display. It loads a random image from [source.unsplash.com](https://source.unsplash.com/), dithers it and shows it on the display at an interval you define.
+This project is a simple digital photo frame using a Raspberry Pi and an Inky wHAT e-ink display. It loads a random image from [source.unsplash.com](https://source.unsplash.com/), dithers it and updates the image on the display at an interval you define.
 
 ## Hardware requirements
 
@@ -9,7 +9,7 @@ This project is a simple digital photo frame using a Raspberry Pi and an Inky wH
 
 ## Raspberry Pi headless setup
 
-To set up the project without hooking up the Raspberry Pi to a monitor and keywbord you can do the following:
+To set up the project without hooking up the Raspberry Pi to a monitor and keyboard you can do the following:
 
 * Create an empty file named `ssh` on the boot partition of the SD card containing Raspberry Pi OS
 * Create a file called `wpa_supplicant.conf` on the boot partition root folder that contains your country information and wifi access point credentials:
@@ -27,11 +27,11 @@ network={
 * Insert the SD card into your Raspberry Pi and allow it to boot up
 * When the Raspberry Pi has booted up you can now SSH into the device from your machine, you'll need to look up what it's IP address is. The default username for the device is `'pi'` and the password is `'raspberry'`.
 
-* Git clone the Pimoroni Inky repository and run `install.sh` to get the necessary libraries installed
+* Git clone the [Pimoroni Inky repository](https://github.com/pimoroni/inky) and run `install.sh` to get the necessary library dependencies installed.
 ```
 git clone https://github.com/pimoroni/inky.git
 ```
-* Git clone this project to get the digital photo frame script
+* Git clone this repository to get the digital photo frame Python script
 ```
 git clone https://github.com/peterelst/photoframe.git
 ```
@@ -54,3 +54,5 @@ If you want the image to update every 15 minutes the syntax for that looks as fo
 ```
 */15 * * * * python /home/pi/photoframe/photoframe.py
 ```
+
+> If you would like to run the script at a different interval, [crontab.guru](https://crontab.guru/) is a helpful resource to figure out the right syntax for that.
