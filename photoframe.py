@@ -6,12 +6,13 @@ import requests
 
 # Keyword for random photo to search
 keyword = 'cat'
+# Construct random image URL
 image_url = 'https://source.unsplash.com/400x300/?{0}'.format(keyword)
 # Filename for downloaded image
 img_file = 'photo.jpg'
 
 def main():
-    # Initialize InkyWHAT display
+    # Initialize Inky wHAT display
     inky_display = InkyWHAT('black')
 
     # Download image and save locally
