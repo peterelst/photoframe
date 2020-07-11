@@ -12,7 +12,7 @@ This project is a simple digital photo frame using a Raspberry Pi and an Inky wH
 To set up the project without hooking up the Raspberry Pi to a monitor and keyboard you can do the following:
 
 * Create an empty file named `ssh` on the boot partition of the SD card containing Raspberry Pi OS
-* Create a file called `wpa_supplicant.conf` on the boot partition root folder that contains your country information and wifi access point credentials:
+* Create a file called `wpa_supplicant.conf` on the boot partition root folder that contains your [country code](https://en.wikipedia.org/wiki/ISO_3166-1) and wifi access point credentials:
 
 ```ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
