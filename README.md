@@ -2,6 +2,8 @@
 
 This project is a simple digital photo frame using a Raspberry Pi and an Inky wHAT e-ink display. It loads a random image from [source.unsplash.com](https://source.unsplash.com/), dithers it and updates the image on the display at an interval you define.
 
+![Inky wHAT photo frame](https://raw.githubusercontent.com/peterelst/photoframe/master/assets/photoframe.jpg)
+
 ## Hardware requirements
 
 * [Raspberry Pi Zero](https://shop.pimoroni.com/products/raspberry-pi-zero) (or any Inky wHAT compatible model)
