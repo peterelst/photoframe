@@ -38,12 +38,14 @@ git clone https://github.com/peterelst/photoframe.git
 * You're now ready and can test if the setup is successful by running the following command and watching the display update: `python photoframe.py`
 
 
-## Customize image keyword
+## Customize random image keywords
 
 The Python script uses [source.unsplash.com](https://source.unsplash.com/) for easily getting hold of random images by keyword, the default used is `'cat'` and you can obviously change that in [`photoframe.py`](https://github.com/peterelst/photoframe/blob/master/photoframe.py#L8) to whatever you'd like to see or leave it empty and get completely random images showing up.
 ```
 keyword = '<your keyword>'
 ```
+> It is possible to provide multiple keywords for images you would like to see. To to this, comma separate them without any spaces inbetween e.g. 'cats,dogs'
+
 ## Setting up a cron job
 
 To have the Python script run at a defined interval and update the image on the display automatically you can use crontab by running the following command:
